@@ -1,0 +1,16 @@
+{
+    "name": "steeve/php_a2_gr2_twig",
+    "description": "Rendu A2 GR2 sem 2",
+    "require": {
+        "twig/twig": "~1.16",
+        "imagine/imagine": "~0.6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Steeve Jerent",
+            "email": "Jerent.steeve@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
