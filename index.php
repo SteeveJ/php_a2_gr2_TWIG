@@ -23,7 +23,9 @@ $articles = getArticles($link, null, ($currentPage-1)*$perPage, $perPage);
 
 echo $twig->render('articles.html.twig', [
     'articles' => $articles,
-    'connected' => true,
+    'currentPage' => $currentPage,
+    'nbPage' => $nbPages,
+    'connected' => isConnected(),
     'username' => 'BLOb',
 ]);
 

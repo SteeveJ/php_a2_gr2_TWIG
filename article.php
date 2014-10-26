@@ -16,6 +16,7 @@ if (!empty($_GET['id'])) {
     header('Location: index.php');
 }
 
+echo $twig->render('article.html.twig', [
+    'article' => $article,
+]);
 require __DIR__.'/_footer.php';
-
-include __DIR__.'/template/article.php';
