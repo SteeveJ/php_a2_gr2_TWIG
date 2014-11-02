@@ -1,0 +1,3 @@
+newart_homepage:
+    path:     /
+    defaults: { _controller: newartBundle:Default:index }

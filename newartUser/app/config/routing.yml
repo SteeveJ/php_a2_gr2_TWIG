@@ -1,0 +1,7 @@
+newart_user:
+    resource: "@NewartUserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

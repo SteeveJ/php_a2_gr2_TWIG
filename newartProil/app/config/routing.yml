@@ -1,0 +1,4 @@
+newart:
+    resource: "@newartBundle/Resources/config/routing.yml"
+    prefix:   /
+
