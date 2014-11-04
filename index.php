@@ -26,7 +26,7 @@ echo $twig->render('articles.html.twig', [
     'currentPage' => $currentPage,
     'nbPage' => $nbPages,
     'connected' => isConnected(),
-    'username' => 'BLOb',
+    'username' => GetSession()['username'],
 ]);
 
 require __DIR__.'/_footer.php';

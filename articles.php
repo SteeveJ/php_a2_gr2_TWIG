@@ -8,6 +8,6 @@ require __DIR__.'/_header.php';
 
 $articles = getArticles($link);
 
-require __DIR__.'/_footer.php';
 
-include __DIR__.'/template/articles.php';
+
+require __DIR__.'/_footer.php';
