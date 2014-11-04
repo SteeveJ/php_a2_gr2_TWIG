@@ -21,7 +21,7 @@
         {% for article in articles %}
             <tr>
                 <td><a href="../article.php?id={{ article.id }}" target="_blank">{{ article.id }}</a></td>
-                <td>{{ article.title|truncate(30) }}{# <?php echo getExcerpt($article['title'], 30);?> #}</td>
+                <td>{{ article.title }}{# <?php echo getExcerpt($article['title'], 30);?> #}</td>
                 <td><?php echo getExcerpt($article['content'], 100);?></td>
                 <td><img src="<?php echo $article['image'];?>" alt="<?php $article['title'];?>" width="50" height="35"></td>
                 <td><?php echo $article['created_at'];?></td>
@@ -38,4 +38,4 @@
         {% endfor %}
         </tbody>
     </table>
-{% endblock %}
+{% endblock %}{#tu me dis si tu veux un conseil oui merci beaucoup bonne chance pour la fin  #}

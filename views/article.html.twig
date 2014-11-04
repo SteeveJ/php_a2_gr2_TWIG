@@ -1,18 +1,20 @@
 {% extends 'base.html.twig' %}
 
+
+
 {% block content %}
-        <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <header>
-                <h1>{{ article.title }}</h1>
-                <img title="{{ article.title }}" alt="{{ article.title }}" src="{{ article.image }}">
-                <small>Written by {{ article.user_id }} on {{ article.create_at }}</small>
-            </header>
-            <div class="content">
-                <p>{{ article.content }}</p>
-            </div>
-            <footer>
-                <p>Posted in category: <a href="/article?id={{ article.category_id }}">{{ article.category_id }}</a></p>
-                <p><a href="/tag?id={{ article.category_id }}"><span class="label label-primary">Primary</span></a></p>
-            </footer>
-        </article>
+    <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <header>
+            <h1> {{ article.title }} </h1>
+            <img title="{{ article.title }}" alt="{{ articles.title }}" src="{{ article.image}}">
+            <small> Written by {{ article.user_id }} on {{ article.created_at }} </small>
+        </header>
+        <div class="content">
+            <p>{{ articles.content }}</p>
+        </div>
+        <footer>
+            <p>Posted in category: <a href="/article.php?id={{ article.title }}">{{ article.title }}</a></p>
+            <p><a href="/tag?id={{ article.title }}"><span class="label label-primary">Primary</span></a></p>
+        </footer>
+    </article>
 {% endblock %}
